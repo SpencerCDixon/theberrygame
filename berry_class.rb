@@ -37,8 +37,4 @@ end
 
 
 
-red = RedBerry.new(:berry_color => "red")
 
-puts red.berry_count
-red.add_berry(10)
-puts red.berry_count
