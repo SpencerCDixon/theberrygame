@@ -10,6 +10,7 @@ attr_accessor :red, :blue, :purple
   end
 
   def show_score
+
     puts "Red Berry Count: " + red.berry_count.to_s
     puts "Blue Berry Count: " + blue.berry_count.to_s
     puts "Purple Berry Count: " + purple.berry_count.to_s
