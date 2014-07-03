@@ -8,12 +8,15 @@ class Weather
     @snow = args[:snow]
   end
 
-  def levels
+  def rain_level
     puts rain
+  end
+
+  def snow_level
     puts snow
   end
 
-   def raining
+  def raining
     @rain = rain + 3
     @snow = snow - 1
   end

@@ -3,10 +3,11 @@
 class Scoreboard
 attr_accessor :red, :blue, :purple
 
-  def initialize(red, blue, purple)
+  def initialize(red, blue, purple, black)
     @red = red
     @blue = blue
     @purple = purple
+    @black = black
   end
 
   def show_score

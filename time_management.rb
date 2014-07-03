@@ -20,3 +20,15 @@ end
 
 
 # Months and their % chance for certain weather
+
+class Month
+  attr_accessor :name_month, :rain_chance, :snow_chance, :drought_chance
+
+  def initialize(args)
+    @name_month = args(:name_month)
+    @rain_chance = args(:rain_chance)
+    @snow_chance = args(:snow_chance)
+    @drought_chance = args(:drought_chance)
+  end
+
+end

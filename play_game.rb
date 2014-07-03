@@ -2,13 +2,17 @@ require './berry_class.rb'
 require './scoreboard.rb'
 require './weather.rb'
 
+# Initializing weather, months, and time management
+
+
 
 # Initializing Berry Objects
 red = RedBerry.new(:berry_color => "red", :berry_count => 1)
 blue = RedBerry.new(:berry_color => "blue", :berry_count => 1)
 purple = RedBerry.new(:berry_color => "purple", :berry_count => 0)
+black = RedBerry.new(:berry_color => "purple", :berry_count => 0)
 
-scoreboard = Scoreboard.new(red, blue, purple)
+scoreboard = Scoreboard.new(red, blue, purple, black )
 
 puts scoreboard.show_score
 
