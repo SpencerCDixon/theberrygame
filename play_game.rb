@@ -1,5 +1,7 @@
 require './berry_class.rb'
 require './scoreboard.rb'
+require './weather.rb'
+
 
 # Initializing Berry Objects
 red = RedBerry.new(:berry_color => "red", :berry_count => 1)
