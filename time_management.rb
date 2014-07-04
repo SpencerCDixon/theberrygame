@@ -1,4 +1,7 @@
+
+
 # Keeps track of months and effects of months
+
 
 class Turn
   attr_accessor :turn_count
@@ -22,13 +25,29 @@ end
 # Months and their % chance for certain weather
 
 class Month
-  attr_accessor :name_month, :rain_chance, :snow_chance, :drought_chance
+  attr_accessor :month_name, :rain_chance, :snow_chance, :drought_chance
 
   def initialize(args)
-    @name_month = args(:name_month)
-    @rain_chance = args(:rain_chance)
-    @snow_chance = args(:snow_chance)
-    @drought_chance = args(:drought_chance)
+    @month_name = args[:month_name]
+    @rain_chance = args[:rain_chance]
+    @snow_chance = args[:snow_chance]
+    @drought_chance = args[:drought_chance]
+  end
+
+  def raining?(rain)
+    num = 1 + rand(100)
+    if num <= 25
+      rain
+    end
+  end
+
+  def snowing?
+    num = rand(101)
+    if num <= snow_chance
+      weather.snowing
+    else
+      weather.mild
+    end
   end
 
 end

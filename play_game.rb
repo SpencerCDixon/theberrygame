@@ -1,6 +1,7 @@
 require './berry_class.rb'
 require './scoreboard.rb'
 require './weather.rb'
+require './time_management.rb'
 
 
 # Initializing Berry Objects
@@ -11,10 +12,13 @@ purple = RedBerry.new(berry_color: "purple", berry_count: 0)
 # Initializing weather, months, time management, and scoreboard.
 weather = Weather.new(rain: 7, snow: 0)
 scoreboard = Scoreboard.new(red: red, blue: blue, purple: purple)
+january = Month.new(month_name: "january", rain_chance: 25, snow_chance: 75, drought_chance: 0)
+weather.snowing
+january.raining?(weather.raining)
+
 
 
 print weather.rain_level
-weather.snowing
 print weather.snow_level
 puts scoreboard.show_score
 
