@@ -28,8 +28,8 @@ class Weather
   end
 
   def mild
-    @rain = rain + 1
-    @snow = snow + 1
+    @rain = rain - 1
+    @snow = snow - 1
   end
 
   def drought

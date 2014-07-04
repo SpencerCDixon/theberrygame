@@ -1,4 +1,4 @@
-
+require './weather.rb'
 
 # Keeps track of months and effects of months
 
@@ -34,19 +34,24 @@ class Month
     @drought_chance = args[:drought_chance]
   end
 
-  def raining?(rain)
+  def raining?
     num = 1 + rand(100)
-    if num <= 25
-      rain
+    if num <= rain_chance
+      $weather.raining
+      $weather.start_rain
+    else
+      snowing?
     end
   end
 
   def snowing?
-    num = rand(101)
+    num = 1 + rand(100)
     if num <= snow_chance
-      weather.snowing
+      $weather.snowing
+      $weather.start_snow
     else
-      weather.mild
+      $weather.mild
+      puts "mild"
     end
   end
 

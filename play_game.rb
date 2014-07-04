@@ -10,16 +10,17 @@ blue = RedBerry.new(berry_color: "blue", berry_count: 1)
 purple = RedBerry.new(berry_color: "purple", berry_count: 0)
 
 # Initializing weather, months, time management, and scoreboard.
-weather = Weather.new(rain: 7, snow: 0)
+$weather = Weather.new(rain: 7, snow: 0)
 scoreboard = Scoreboard.new(red: red, blue: blue, purple: purple)
-january = Month.new(month_name: "january", rain_chance: 25, snow_chance: 75, drought_chance: 0)
-weather.snowing
-january.raining?(weather.raining)
+january = Month.new(month_name: "january", rain_chance: 5, snow_chance: 5, drought_chance: 0)
+$weather.snowing
+$weather.snowing
+january.raining?
 
 
 
-print weather.rain_level
-print weather.snow_level
+print $weather.rain_level
+print $weather.snow_level
 puts scoreboard.show_score
 
 puts "Which Berries would you like to combine?"
