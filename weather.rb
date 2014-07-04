@@ -9,11 +9,11 @@ class Weather
   end
 
   def rain_level
-    puts rain
+    puts "Water Levels: " + rain.to_s + (" " +("|" * rain))
   end
 
   def snow_level
-    puts snow
+    puts "Snow Levels: " + snow.to_s + (" " +("|" * snow))
   end
 
   def raining

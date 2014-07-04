@@ -2,20 +2,21 @@ require './berry_class.rb'
 require './scoreboard.rb'
 require './weather.rb'
 
-# Initializing weather, months, and time management
-
-
 
 # Initializing Berry Objects
-red = RedBerry.new(:berry_color => "red", :berry_count => 1)
-blue = RedBerry.new(:berry_color => "blue", :berry_count => 1)
-purple = RedBerry.new(:berry_color => "purple", :berry_count => 0)
-black = RedBerry.new(:berry_color => "purple", :berry_count => 0)
+red = RedBerry.new(berry_color: "red", berry_count: 1)
+blue = RedBerry.new(berry_color: "blue", berry_count: 1)
+purple = RedBerry.new(berry_color: "purple", berry_count: 0)
 
-scoreboard = Scoreboard.new(red, blue, purple, black )
+# Initializing weather, months, time management, and scoreboard.
+weather = Weather.new(rain: 7, snow: 0)
+scoreboard = Scoreboard.new(red: red, blue: blue, purple: purple)
 
+
+print weather.rain_level
+weather.snowing
+print weather.snow_level
 puts scoreboard.show_score
-
 
 puts "Which Berries would you like to combine?"
 print "First Berry: "
@@ -40,6 +41,8 @@ case
 
   else
     puts "Not sufficient berries."
-  end
+end
+
   puts purple.berry_count.to_s << " New Purple Berries!"
+  sleep 1
   puts scoreboard.show_score
