@@ -1,7 +1,6 @@
 # This will be the top class of berries to be inherited from
 
 class Berry
-
   attr_accessor :berry_count
 
   def initialize(args={})
@@ -21,6 +20,12 @@ class Berry
     nil
   end
 
+  def combine_berries(berry_output1, berry_output2, berry_outcome)
+    berry_output1.use_berry(1)
+    berry_output2.use_berry(1)
+    berry_outcome.add_berry(3)
+  end
+
 end
 
 class RedBerry < Berry
@@ -30,11 +35,11 @@ class RedBerry < Berry
     @berry_count = args[:berry_count] || 0
   end
 
-  def combine_berries(berry_output1, berry_output2, berry_outcome)
-    berry_output1.use_berry(1)
-    berry_output2.use_berry(1)
-    berry_outcome.add_berry(3)
-  end
+ # def combine_berries(berry_output1, berry_output2, berry_outcome)
+  #  berry_output1.use_berry(1)
+  #  berry_output2.use_berry(1)
+  #  berry_outcome.add_berry(3)
+  #end
 
 end
 

@@ -1,4 +1,4 @@
-
+require 'colorize'
 
 class Scoreboard
 attr_accessor :red, :blue, :purple
@@ -11,12 +11,12 @@ attr_accessor :red, :blue, :purple
   end
 
   def show_score
-    puts "---------------------------------------------"
-    puts "                 SCOREBOARD                  "
-    puts "---------------------------------------------"
-    print "[Red: " + red.berry_count.to_s + "  ]"
-    print "[Blue: " + blue.berry_count.to_s + "  ]"
-    print "[Purple: " + purple.berry_count.to_s + "  ]"
+    puts "---------------------------------------------".colorize(:yellow)
+    puts "                 SCOREBOARD                  ".colorize(:yellow)
+    puts "---------------------------------------------".colorize(:yellow)
+    print "[Red: " + red.berry_count.to_s + "] "
+    print "[Blue: " + blue.berry_count.to_s + "] "
+    print "[Purple: " + purple.berry_count.to_s + "] "
   end
 
 

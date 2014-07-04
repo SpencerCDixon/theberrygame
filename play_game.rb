@@ -45,4 +45,7 @@ end
 
   puts purple.berry_count.to_s << " New Purple Berries!"
   sleep 1
+  puts weather.start_rain
+  sleep 1
+  puts weather.start_snow
   puts scoreboard.show_score
