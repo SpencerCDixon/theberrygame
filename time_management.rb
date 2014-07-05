@@ -1,8 +1,6 @@
 require './weather.rb'
 
 # Keeps track of months and effects of months
-
-
 class Turn
   attr_accessor :turn_count
 
@@ -11,12 +9,17 @@ class Turn
   end
 
   def default_turn_count
-    @turn_count = 1
+    turn_count[-1]
   end
 
   def next_round
-    @turn_count = turn_count + 1
+    turn_count.pop
   end
+
+  def month_check
+    if turn_count == [] then turn_count.push(5, 4, 3, 2, 1) end
+  end
+
 end
 
 # Class to cycle through the months

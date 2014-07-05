@@ -73,5 +73,11 @@ class Weather
     puts " It has started snowing...... "
   end
 
+  def start_drought
+    puts "                        /   /   /   /   /   /"
+
+  end
+
+
 end
 
