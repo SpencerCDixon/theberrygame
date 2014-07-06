@@ -90,7 +90,17 @@ class Weather
   end
 
   def start_drought
-    puts "                        /   /   /   /   /   /"
+    puts "                        /   /   /   /   /   /".yellow
+    sleep(1.0/3.0)
+    puts "                      /   /   /   /   /   /  ".yellow
+    sleep(1.0/3.0)
+    puts "                    /   /   /   /   /   /    ".yellow
+    sleep(1.0/3.0)
+    puts "                  /   /   /   /   /   /      ".yellow
+    sleep(1.0/3.0)
+    puts "                /   /   /   /   /   /        ".yellow
+    sleep(1.0/3.0)
+    puts "              /   /   /   /   /   /          ".yellow
 
   end
 
