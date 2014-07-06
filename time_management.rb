@@ -24,6 +24,22 @@ end
 
 # Class to cycle through the months
 
+class MonthCycle
+  attr_accessor :month_count
+
+  def initialize(args)
+    @month_count = args[:month_count]
+  end
+
+  def current_month
+    month_count[-1]
+  end
+
+  def next_month
+    month_count.pop
+  end
+
+end
 
 # Months and their % chance for certain weather
 
