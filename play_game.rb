@@ -11,7 +11,7 @@ purple = RedBerry.new(berry_color: "purple", berry_count: 0)
 
 # Initializing weather, months, time management, and scoreboard.
 $round = Turn.new(turn_count: [5,4,3,2,1,1])
-$weather = Weather.new(rain: 7, snow: 1)
+$weather = Weather.new(rain: 7, snow: 0)
 scoreboard = Scoreboard.new(red: red, blue: blue, purple: purple)
 
 # Months
@@ -98,6 +98,9 @@ month_tracker = month_tracker.push(1)
     puts purple.berry_count.to_s.green << " New Purple Berries!".green
     sleep 1
 
-break if purple.berry_count == 21
+
+
 
 end
+
+

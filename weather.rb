@@ -19,8 +19,11 @@ class Weather
   end
 
   def raining
-    @rain = rain + 3
-    @snow = snow - 1
+    @rain = rain + 2
+    if snow > 0
+      @snow = snow - 1
+      @rain = rain + 1
+    end
   end
 
   def snowing
@@ -28,12 +31,26 @@ class Weather
   end
 
   def mild
-    @snow = snow - 1
+    @rain = rain - 1
+
+    if snow > 0
+      @snow = snow - 1
+      @rain = rain + 1
+    end
   end
 
   def drought
     @rain = rain - 3
-    @snow = snow - 3
+    if snow >= 3
+     @snow = snow - 3
+     @rain = rain + 3
+    elsif snow == 2
+     @snow = snow - 2
+     @rain = rain + 2
+    elsif snow == 1
+     @snow = snow - 1
+     @rain = rain + 1
+    end
   end
 
   def start_rain
@@ -75,6 +92,14 @@ class Weather
   def start_drought
     puts "                        /   /   /   /   /   /"
 
+  end
+
+  def start_mild
+    puts " ~~~ ~~~~~~ ~~   ~~~~ ~~~ ~~~~ ~~ ~ ~~~~~~    "
+    sleep(1.0/3.0)
+    puts " ~~~ ~~ ~~~~~~   ~~~~~ ~~ ~~~~ ~~ ~ ~~~~~~    "
+    sleep(1.0/3.0)
+    puts " ~~~~~  ~~~~~~   ~~~~~~~~ ~~~~ ~~ ~ ~~~~~~    "
   end
 
 

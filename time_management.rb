@@ -69,8 +69,20 @@ class Month
       $weather.snowing
       $weather.start_snow
     else
+      drought?
+
+    end
+  end
+
+  def drought?
+    num = 1 + rand(100)
+    if num <= drought_chance
+      $weather.drought
+      $weather.start_drought
+    else
       $weather.mild
-      puts "mild"
+      $weather.start_mild
+
     end
   end
 
