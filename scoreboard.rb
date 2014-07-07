@@ -12,7 +12,7 @@ attr_accessor :red, :blue, :purple
 
   def show_score
     puts "---------------------------------------------".colorize(:yellow)
-    puts "Month: ".red + $months.current_month.month_name.capitalize.yellow + "   SCOREBOARD   ".colorize(:yellow) + "    Round #: ".red +  $round.default_turn_count.to_s.yellow
+    puts "Month: ".red + $months.current_month.month_name.capitalize.yellow + "   SCOREBOARD   ".colorize(:white) + "    Round #: ".red +  $round.default_turn_count.to_s.yellow
     puts "---------------------------------------------".colorize(:yellow)
     print "[Red: ".green + red.berry_count.to_s.magenta + "] ".green
     print "[Blue: ".green + blue.berry_count.to_s.magenta + "] ".green

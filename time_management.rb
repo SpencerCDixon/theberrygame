@@ -17,7 +17,8 @@ class Turn
   end
 
   def month_check
-    if turn_count == [] then turn_count.push(5, 4, 3, 2, 1) end
+    if turn_count == ["1"] then turn_count.push(5, 4, 3, 2, 1) end
+
   end
 
 end

@@ -17,8 +17,6 @@ class Berry
     end
 
     @berry_count += num
-
-
   end
 
   def use_berry(num)
@@ -29,14 +27,17 @@ class Berry
     nil
   end
 
-  def combine_berries(berry_output1, berry_output2, berry_outcome)
+  def combine_berries(berry_output1, berry_output2, berry_outcome, num)
     berry_output1.use_berry(1)
     berry_output2.use_berry(1)
-    berry_outcome.add_berry(3)
+    berry_outcome.add_berry(num)
     # + berry production
+
+    puts berry_outcome.berry_count.to_s.green + " New" + berry_outcome.berry_color + " Berries!"
   end
 
 end
+
 
 class RedBerry < Berry
 
@@ -45,6 +46,9 @@ class RedBerry < Berry
     @berry_count = args[:berry_count] || 0
   end
 
+  def berry_color
+    @berry_color
+  end
   # def berry_production_monthly
   # end
 

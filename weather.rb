@@ -11,11 +11,11 @@ class Weather
   end
 
   def rain_level
-    puts "Water Levels: ".colorize(:light_blue) + rain.to_s.colorize(:light_blue) #+ (" " +("|" * rain)).colorize(:light_blue)
+    print "Water Levels: ".colorize(:light_blue) + rain.to_s.colorize(:light_blue) + "                "
   end
 
   def snow_level
-    puts "Snow Levels: ".colorize(:light_white) + snow.to_s.colorize(:light_white) #+ (" " +("|" * snow)).colorize(:light_white)
+    print "Snow Levels: ".colorize(:light_white) + snow.to_s.colorize(:light_white)
   end
 
   def raining
