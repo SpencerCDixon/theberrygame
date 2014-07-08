@@ -10,5 +10,6 @@ In order to play the game just enter the following into your terminal.
 <code> cd berry_game </code>
 <code> ruby play_game.rb</code>
 
+Once the game begins just follow along with the instructions.
 
-Simply run the 'play_game.rb' and follow along with the instructions
+To report bugs please email me at: spencercdixon@gmail.com
