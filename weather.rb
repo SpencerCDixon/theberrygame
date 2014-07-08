@@ -57,16 +57,17 @@ class Weather
     puts "| | | | | | | | | | | | | | | | | | | | | | |".blue
     sleep(1.0/3.0)
     puts " | | | | | | | | | | | | | | | | | | | | | | ".blue
-    #sleep(1.0/3.0)
-    #puts "| | | | | | | | | | | | | | | | | | | | | | |".blue
-    #sleep(1.0/3.0)
-    #puts " | | | | | | | | | | | | | | | | | | | | | | ".blue
-    #sleep(1.0/3.0)
-    #puts "| | | | | | | | | | | | | | | | | | | | | | |".blue
-    #sleep(1.0/3.0)
-    #puts " | | | | | | | | | | | | | | | | | | | | | | ".blue
-    #sleep(1.0/3.0)
-    #puts "| | | | | | | | | | | | | | | | | | | | | | |".blue
+    sleep(1.0/3.0)
+    puts "| | | | | | | | | | | | | | | | | | | | | | |".blue
+    sleep(1.0/4.0)
+    puts " | | | | | | | | | | | | | | | | | | | | | | ".blue
+    sleep(1.0/4.0)
+    puts "| | | | | | | | | | | | | | | | | | | | | | |".blue
+    sleep(1.0/5.0)
+    puts " | | | | | | | | | | | | | | | | | | | | | | ".blue
+    sleep(1.0/5.0)
+    puts "| | | | | | | | | | | | | | | | | | | | | | |".blue
+    sleep(1.0/3.0)
     puts " It has started raining...... "
   end
 
@@ -74,18 +75,19 @@ class Weather
     puts ". . . . . . . . . . . . . . . . . . . . . . .".light_white
     sleep(1.0/3.0)
     puts " . . . . . . . . . . . . . . . . . . . . . . ".light_white
-    #sleep(1.0/3.0)
-    #puts ". . . . . . . . . . . . . . . . . . . . . . .".light_white
-    #sleep(1.0/3.0)
-    #puts " . . . . . . . . . . . . . . . . . . . . . . ".light_white
-    #sleep(1.0/3.0)
-    #puts ". . . . . . . . . . . . . . . . . . . . . . .".light_white
-    #sleep(1.0/3.0)
-    #puts " . . . . . . . . . . . . . . . . . . . . . . ".light_white
-    #sleep(1.0/3.0)
-   # puts ". . . . . . . . . . . . . . . . . . . . . . .".light_white
-    #sleep(1.0/3.0)
-    #puts " . . . . . . . . . . . . . . . . . . . . . . ".light_white
+    sleep(1.0/3.0)
+    puts ". . . . . . . . . . . . . . . . . . . . . . .".light_white
+    sleep(1.0/4.0)
+    puts " . . . . . . . . . . . . . . . . . . . . . . ".light_white
+    sleep(1.0/4.0)
+    puts ". . . . . . . . . . . . . . . . . . . . . . .".light_white
+    sleep(1.0/5.0)
+    puts " . . . . . . . . . . . . . . . . . . . . . . ".light_white
+    sleep(1.0/5.0)
+    puts ". . . . . . . . . . . . . . . . . . . . . . .".light_white
+    sleep(1.0/6.0)
+    puts " . . . . . . . . . . . . . . . . . . . . . . ".light_white
+    sleep(1.0/3.0)
     puts " It has started snowing...... "
   end
 

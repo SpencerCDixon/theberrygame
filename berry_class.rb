@@ -63,9 +63,186 @@ class RedBerry < Berry
   def berry_color
     @berry_color
   end
-  # def berry_production_monthly
-  # end
+end
 
+class YellowBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class GreenBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class WhiteBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class BlackBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class GrayBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class TanBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class PinkBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class IndigoBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class BrownBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class BlueBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class OrangeBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class MaroonBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class TealBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class PurpleBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
+end
+
+class GoldBerry < Berry
+
+  def post_initialize(args)
+    @berry_color = args[:berry_color]
+    @berry_count = args[:berry_count] || 0
+  end
+
+  def berry_color
+    @berry_color
+  end
 end
 
 
