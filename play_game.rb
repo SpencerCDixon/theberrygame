@@ -339,6 +339,14 @@ month_tracker = month_tracker.push(1)
   break if $weather.rain >= 13 || $weather.rain == 0
   break if $yellow.berry_count >= 1 && $green.berry_count >= 1 && $white.berry_count >= 1 && $black.berry_count >= 1 && $red.berry_count >= 1 && $gray.berry_count >= 1 && $tan.berry_count >= 1 && $pink.berry_count >= 1 && $indigo.berry_count >= 1 && $brown.berry_count >= 1 && $blue.berry_count >= 1 && $orange.berry_count >= 1 && $maroon.berry_count >= 1 && $teal.berry_count >= 1 && $purple.berry_count >= 1 && $gold.berry_count >= 1
 
+  puts " "
+  puts " "
+  puts instructions.loading
+  puts " "
+  puts " "
+
+
+
 end
 
 # Decide if you win or lose
