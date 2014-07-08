@@ -5,22 +5,22 @@ require './time_management.rb'
 require './instructions.rb'
 
 # Initializing Berry Objects
-$red = RedBerry.new(berry_color: "red", berry_count: 2)
-$blue = BlueBerry.new(berry_color: "blue", berry_count: 2)
+$red = RedBerry.new(berry_color: "red", berry_count: 0)
+$blue = BlueBerry.new(berry_color: "blue", berry_count: 0)
 $purple = PurpleBerry.new(berry_color: "purple", berry_count: 0)
-$pink = PinkBerry.new(berry_color: "pink", berry_count: 1)
-$green = GreenBerry.new(berry_color: "green", berry_count: 2)
+$pink = PinkBerry.new(berry_color: "pink", berry_count: 0)
+$green = GreenBerry.new(berry_color: "green", berry_count: 0)
 $white = WhiteBerry.new(berry_color: "white", berry_count: 3)
 $black = BlackBerry.new(berry_color: "black", berry_count: 3)
-$gray = GrayBerry.new(berry_color: "gray", berry_count: 2)
-$indigo = IndigoBerry.new(berry_color: "indigo", berry_count: 2)
-$brown = BrownBerry.new(berry_color: "brown", berry_count: 2)
-$orange = OrangeBerry.new(berry_color: "orange", berry_count: 2)
-$maroon = MaroonBerry.new(berry_color: "maroon", berry_count: 2)
-$teal = TealBerry.new(berry_color: "teal", berry_count: 2)
-$gold = GoldBerry.new(berry_color: "gold", berry_count: 2)
+$gray = GrayBerry.new(berry_color: "gray", berry_count: 0)
+$indigo = IndigoBerry.new(berry_color: "indigo", berry_count: 0)
+$brown = BrownBerry.new(berry_color: "brown", berry_count: 0)
+$orange = OrangeBerry.new(berry_color: "orange", berry_count: 0)
+$maroon = MaroonBerry.new(berry_color: "maroon", berry_count: 0)
+$teal = TealBerry.new(berry_color: "teal", berry_count: 0)
+$gold = GoldBerry.new(berry_color: "gold", berry_count: 0)
 $yellow = YellowBerry.new(berry_color: "yellow", berry_count: 3)
-$tan = TanBerry.new(berry_color: "tan", berry_count: 2)
+$tan = TanBerry.new(berry_color: "tan", berry_count: 0)
 
 # Initializing weather, months, time management, and scoreboard.
 $round = Turn.new(turn_count: ["1",5,4,3,2,1,1])
@@ -339,24 +339,17 @@ month_tracker = month_tracker.push(1)
   break if $weather.rain >= 13 || $weather.rain == 0
   break if $yellow.berry_count >= 1 && $green.berry_count >= 1 && $white.berry_count >= 1 && $black.berry_count >= 1 && $red.berry_count >= 1 && $gray.berry_count >= 1 && $tan.berry_count >= 1 && $pink.berry_count >= 1 && $indigo.berry_count >= 1 && $brown.berry_count >= 1 && $blue.berry_count >= 1 && $orange.berry_count >= 1 && $maroon.berry_count >= 1 && $teal.berry_count >= 1 && $purple.berry_count >= 1 && $gold.berry_count >= 1
 
-
-    sleep(1.0/5.0)
-    puts " "
-    instructions.loading
-    puts " "
-    puts " "
-
-
-
 end
 
-if $weather.rain >= 13 || $weather.rain == 0
-  puts instructions.lose
-end
+# Decide if you win or lose
 
+puts " "
+puts " "
 
 if $yellow.berry_count >= 1 && $green.berry_count >= 1 && $white.berry_count >= 1 && $black.berry_count >= 1 && $red.berry_count >= 1 && $gray.berry_count >= 1 && $tan.berry_count >= 1 && $pink.berry_count >= 1 && $indigo.berry_count >= 1 && $brown.berry_count >= 1 && $blue.berry_count >= 1 && $orange.berry_count >= 1 && $maroon.berry_count >= 1 && $teal.berry_count >= 1 && $purple.berry_count >= 1 && $gold.berry_count >= 1
   puts instructions.win
+elsif $weather.rain >= 13 || $weather.rain == 0
+  puts instructions.lose
 end
 
 

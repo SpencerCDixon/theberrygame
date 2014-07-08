@@ -68,7 +68,8 @@ class Weather
     sleep(1.0/5.0)
     puts "| | | | | | | | | | | | | | | | | | | | | | |".blue
     sleep(1.0/3.0)
-    puts " It has started raining...... "
+    puts " "
+    puts " It has started raining... "
   end
 
   def start_snow
@@ -88,7 +89,8 @@ class Weather
     sleep(1.0/6.0)
     puts " . . . . . . . . . . . . . . . . . . . . . . ".light_white
     sleep(1.0/3.0)
-    puts " It has started snowing...... "
+    puts " "
+    puts " It has started snowing... "
   end
 
   def start_drought
@@ -103,15 +105,27 @@ class Weather
     puts "                /   /   /   /   /   /        ".yellow
     sleep(1.0/3.0)
     puts "              /   /   /   /   /   /          ".yellow
+    sleep(1.0/3.0)
+    puts " "
+    puts "Oh no! Looks like there has been a drought."
 
   end
 
   def start_mild
-    puts " ~~~ ~~~~~~ ~~   ~~~~ ~~~ ~~~~ ~~ ~ ~~~~~~    "
+    puts " ~~~ ~   ~~ ~~   ~~~~ ~~~    ~ ~~ ~ ~~~~~~    "
     sleep(1.0/3.0)
-    puts " ~~~ ~~ ~~~~~~   ~~~~~ ~~ ~~~~ ~~ ~ ~~~~~~    "
+    puts " ~~~ ~~ ~~  ~~   ~     ~~ ~ ~~ ~~ ~ ~  ~~~    "
     sleep(1.0/3.0)
-    puts " ~~~~~  ~~~~~~   ~~~~~~~~ ~~~~ ~~ ~ ~~~~~~    "
+    puts " ~~ ~~  ~~  ~~   ~~     ~ ~~~~ ~~ ~ ~~        "
+    sleep(1.0/3.0)
+    puts " ~~~ ~   ~~ ~~   ~~~~ ~~~    ~ ~~ ~ ~~~~~~    "
+    sleep(1.0/3.0)
+    puts " ~~~ ~~ ~~  ~~   ~     ~~ ~ ~~ ~~ ~ ~  ~~~    "
+    sleep(1.0/3.0)
+    puts " ~~ ~~  ~~  ~~   ~~     ~ ~~~~ ~~ ~ ~~        "
+    sleep(1.0/3.0)
+    puts " "
+    puts "It appears to be a mild month..."
   end
 
 
