@@ -34,6 +34,30 @@ class Berry
     puts "You now have ".green << new_berries.to_s.green << " #{berry_outcome.berry_color} berries! ".green
   end
 
+  def combine_2_berries(berry_output1, berry_output2, berry_outcome1, num1, berry_outcome2, num2)
+    berry_output1.use_berry(1)
+    berry_output2.use_berry(1)
+    new_berries1 = berry_outcome1.add_berry(num1)
+    new_berries2 = berry_outcome2.add_berry(num2)
+
+    puts " "
+    puts "You now have ".green << new_berries1.to_s.green << " #{berry_outcome1.berry_color} berries! ".green
+    puts "You now have ".green << new_berries2.to_s.green << " #{berry_outcome2.berry_color} berries! ".green
+  end
+
+  def combine_3_berries(berry_output1, berry_output2, berry_outcome1, num1, berry_outcome2, num2, berry_outcome3, num3)
+    berry_output1.use_berry(1)
+    berry_output2.use_berry(1)
+    new_berries1 = berry_outcome1.add_berry(num1)
+    new_berries2 = berry_outcome2.add_berry(num2)
+    new_berries3 = berry_outcome3.add_berry(num3)
+
+    puts " "
+    puts "You now have ".green << new_berries1.to_s.green << " #{berry_outcome1.berry_color} berries! ".green
+    puts "You now have ".green << new_berries2.to_s.green << " #{berry_outcome2.berry_color} berries! ".green
+    puts "You now have ".green << new_berries3.to_s.green << " #{berry_outcome3.berry_color} berries! ".green
+  end
+
   def new_berries
     display = @berry_count - combine_berries
     puts display.to_s
