@@ -10,11 +10,9 @@ class Berry
   end
 
   def add_berry(num)
-    if $weather.rain <= 2 || $weather.rain >= 11
-      num = num - 1
-    elsif $weather.rain >= 6 && $weather.rain <= 8
-      num = num + 1
-    end
+    if $weather.rain <= 2 || $weather.rain >= 11 then num = num - 1 end
+    if $weather.rain >= 6 && $weather.rain <= 8 then num = num + 1 end
+    if $weather.snow >= 1 then num = num - 1 end
 
     @berry_count += num
   end
@@ -30,11 +28,27 @@ class Berry
   def combine_berries(berry_output1, berry_output2, berry_outcome, num)
     berry_output1.use_berry(1)
     berry_output2.use_berry(1)
-    berry_outcome.add_berry(num)
-    # + berry production
+    new_berries = berry_outcome.add_berry(num)
 
-    puts berry_outcome.berry_count.to_s.green + " New" + berry_outcome.berry_color + " Berries!"
+    puts " "
+    puts "You now have ".green << new_berries.to_s.green << " #{berry_outcome.berry_color} berries! ".green
   end
+
+  def new_berries
+    display = @berry_count - combine_berries
+    puts display.to_s
+  end
+
+  def berry_count_check(berry_input, berry_number)
+    if @berry_count == 0
+      puts "Seems you don't have enough berries for that. Try one more time.".red
+      print berry_number
+      berry_input = gets.chomp.downcase
+    else
+      true
+    end
+  end
+
 
 end
 
