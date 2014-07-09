@@ -188,7 +188,7 @@ month_tracker = month_tracker.push(1)
       # Yellow Start Combinations
     when ($berry_converted1 == $yellow && $berry_converted2 == $white) || ($berry_converted1 == $white && $berry_converted2 == $yellow) then $yellow.combine_berries($berry_converted1, $berry_converted2, $green, 3)
     when ($berry_converted1 == $yellow && $berry_converted2 == $black) || ($berry_converted1 == $black && $berry_converted2 == $yellow) then $yellow.combine_berries($berry_converted1, $berry_converted2, $red, 3)
-    when ($berry_converted1 == $yellow && $berry_converted2 == $green) || ($berry_converted1 == $green && berry_converted2 == $yellow) then $yellow.combine_berries($berry_converted1, $berry_converted2, $yellow, 3)
+    when ($berry_converted1 == $yellow && $berry_converted2 == $green) || ($berry_converted1 == $green && $berry_converted2 == $yellow) then $yellow.combine_berries($berry_converted1, $berry_converted2, $yellow, 3)
     when ($berry_converted1 == $yellow && $berry_converted2 == $red) || ($berry_converted1 == $red && $berry_converted2 == $yellow) then $yellow.combine_berries($berry_converted1, $berry_converted2, $yellow, 3)
     when ($berry_converted1 == $yellow && $berry_converted2 == $gray) || ($berry_converted1 == $gray && $berry_converted2 == $yellow) then $yellow.combine_berries($berry_converted1, $berry_converted2, $tan, 3)
     when ($berry_converted1 == $yellow && $berry_converted2 == $tan) || ($berry_converted1 == $tan && $berry_converted2 == $yellow) then $yellow.combine_berries($berry_converted1, $berry_converted2, $yellow, 3)
