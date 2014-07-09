@@ -100,6 +100,7 @@ month_tracker = month_tracker.push(1)
 
     unless berry_array.include?(berry_input1) == true
       puts "Please select a real berry. Look at scoreboard to see options.".red
+      puts "Remember not to use spaces after the berry name.".red
       print "First Berry: "
       berry_input1 = gets.chomp.downcase
     end
@@ -139,6 +140,7 @@ month_tracker = month_tracker.push(1)
 
     unless berry_array.include?(berry_input2) == true
       puts "Please select a real berry. Look at scoreboard to see options.".red
+      puts "Remember not to use spaces after the berry name.".red
       print "Second Berry: "
       berry_input2 = gets.chomp.downcase
     end
