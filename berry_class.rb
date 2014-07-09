@@ -63,6 +63,7 @@ class Berry
     puts display.to_s
   end
 
+  # Found a solution not needing this, will probably delete soon.
   def berry_count_check(berry_input, berry_number)
     if @berry_count == 0
       puts "Seems you don't have enough berries for that.".red
@@ -75,6 +76,8 @@ class Berry
 
 end
 
+
+# Berries in individual classes so that once version 2 is developed I can add berry specific features
 
 class RedBerry < Berry
 
