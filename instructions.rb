@@ -34,6 +34,9 @@ class TextInstructions
     puts "You may only combine berries that you already have."
     puts "So don't try and combine a berry if the scoreboard "
     puts "says you have 0 of them."
+    puts " "
+    puts "If you ever want to quit the game feel free to type"
+    puts "'Quit' or 'Exit'"
 
 
 

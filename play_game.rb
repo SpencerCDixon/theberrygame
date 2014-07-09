@@ -95,6 +95,8 @@ month_tracker = month_tracker.push(1)
     print "First Berry: "
     berry_input1 = gets.chomp.downcase
 
+     if berry_input1 == "exit" || berry_input1 == "quit" then Kernel.exit(true) end
+
     unless berry_array.include?(berry_input1) == true
       puts "Please select a real berry. Look at scoreboard to see options.".red
       print "First Berry: "
@@ -131,6 +133,8 @@ month_tracker = month_tracker.push(1)
   loop do
     print "Second Berry: "
     berry_input2 = gets.chomp.downcase
+
+    if berry_input1 === "exit" then Kernel.exit(true) end
 
     unless berry_array.include?(berry_input2) == true
       puts "Please select a real berry. Look at scoreboard to see options.".red
