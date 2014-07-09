@@ -8,6 +8,7 @@ In order to play the game just enter the following into your terminal.
 
 <code> git clone git@github.com:SpencerCDixon/theberrygame.git berry_game </code> <br />
 <code> cd berry_game </code><br />
+<code> bundle install </code><br />
 <code> ruby play_game.rb</code><br />
 
 Once the game begins just follow along with the instructions.
