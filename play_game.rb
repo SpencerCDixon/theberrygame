@@ -106,7 +106,7 @@ month_tracker = month_tracker.push(1)
     if berry_input1 === "purple" then $berry_converted1 = $purple end
     if berry_input1 === "green" then $berry_converted1 = $green end
     if berry_input1 === "white" then $berry_converted1 = $white end
-    if berry_input1 === "black" then berry_converted1 = $black end
+    if berry_input1 === "black" then $berry_converted1 = $black end
     if berry_input1 === "yellow" then $berry_converted1 = $yellow end
     if berry_input1 === "gray" then $berry_converted1 = $gray end
     if berry_input1 === "tan" then $berry_converted1 = $tan end
@@ -168,22 +168,22 @@ month_tracker = month_tracker.push(1)
 
 
       # Same colored berry combinations
-    when $berry_converted1 == $red && $berry_converted2 == $red then $red.combine_berries(berry_converted1, berry_converted2, $red, 3)
-    when $berry_converted1 == $yellow && $berry_converted2 == $yellow then $yellow.combine_berries(berry_converted1, berry_converted2, $yellow, 3)
-    when $berry_converted1 == $white && $berry_converted2 == $white then $white.combine_berries(berry_converted1, berry_converted2, $white, 3)
-    when $berry_converted1 == $black && $berry_converted2 == $black then $black.combine_berries(berry_converted1, berry_converted2, $black, 3)
-    when $berry_converted1 == $green && $berry_converted2 == $green then $green.combine_berries(berry_converted1, berry_converted2, $green, 3)
-    when $berry_converted1 == $gray && $berry_converted2 == $gray then $gray.combine_berries(berry_converted1, berry_converted2, $gray, 3)
-    when $berry_converted1 == $brown && $berry_converted2 == $brown then $brown.combine_berries(berry_converted1, berry_converted2, $brown, 3)
-    when $berry_converted1 == $blue && $berry_converted2 == $blue then $blue.combine_berries(berry_converted1, berry_converted2, $blue, 3)
-    when $berry_converted1 == $orange && $berry_converted2 == $orange then $orange.combine_berries(berry_converted1, berry_converted2, $orange, 3)
-    when $berry_converted1 == $tan && $berry_converted2 == $tan then $tan.combine_2_berries(berry_converted1, berry_converted2, $yellow, 2, $gray, 1)
-    when $berry_converted1 == $pink && $berry_converted2 == $pink then $pink.combine_2_berries(berry_converted1, berry_converted2, $white, 2, $red, 1)
-    when $berry_converted1 == $indigo && $berry_converted2 == $indigo then $indigo.combine_2_berries(berry_converted1, berry_converted2, $black, 2, $green, 1)
-    when $berry_converted1 == $maroon && $berry_converted2 == $maroon then $maroon.combine_2_berries(berry_converted1, berry_converted2, $yellow, 2, $tan, 1)
-    when $berry_converted1 == $teal && $berry_converted2 == $teal then $teal.combine_2_berries(berry_converted1, berry_converted2, $white, 2, $pink, 1)
-    when $berry_converted1 == $purple && $berry_converted2 == $purple then $purple.combine_2_berries(berry_converted1, berry_converted2, $black, 2, $indigo, 1)
-    when $berry_converted1 == $gold && $berry_converted2 == $gold then $gold.combine_3_berries(berry_converted1, berry_converted2, $green, 1, $red, 1, $gray, 1)
+    when $berry_converted1 == $red && $berry_converted2 == $red then $red.combine_berries($berry_converted1, $berry_converted2, $red, 3)
+    when $berry_converted1 == $yellow && $berry_converted2 == $yellow then $yellow.combine_berries($berry_converted1, $berry_converted2, $yellow, 3)
+    when $berry_converted1 == $white && $berry_converted2 == $white then $white.combine_berries($berry_converted1, $berry_converted2, $white, 3)
+    when $berry_converted1 == $black && $berry_converted2 == $black then $black.combine_berries($berry_converted1, $berry_converted2, $black, 3)
+    when $berry_converted1 == $green && $berry_converted2 == $green then $green.combine_berries($berry_converted1, $berry_converted2, $green, 3)
+    when $berry_converted1 == $gray && $berry_converted2 == $gray then $gray.combine_berries($berry_converted1, $berry_converted2, $gray, 3)
+    when $berry_converted1 == $brown && $berry_converted2 == $brown then $brown.combine_berries($berry_converted1, $berry_converted2, $brown, 3)
+    when $berry_converted1 == $blue && $berry_converted2 == $blue then $blue.combine_berries($berry_converted1, $berry_converted2, $blue, 3)
+    when $berry_converted1 == $orange && $berry_converted2 == $orange then $orange.combine_berries($berry_converted1, $berry_converted2, $orange, 3)
+    when $berry_converted1 == $tan && $berry_converted2 == $tan then $tan.combine_2_berries($berry_converted1, $berry_converted2, $yellow, 2, $gray, 1)
+    when $berry_converted1 == $pink && $berry_converted2 == $pink then $pink.combine_2_berries($berry_converted1, $berry_converted2, $white, 2, $red, 1)
+    when $berry_converted1 == $indigo && $berry_converted2 == $indigo then $indigo.combine_2_berries($berry_converted1, $berry_converted2, $black, 2, $green, 1)
+    when $berry_converted1 == $maroon && $berry_converted2 == $maroon then $maroon.combine_2_berries($berry_converted1, $berry_converted2, $yellow, 2, $tan, 1)
+    when $berry_converted1 == $teal && $berry_converted2 == $teal then $teal.combine_2_berries($berry_converted1, $berry_converted2, $white, 2, $pink, 1)
+    when $berry_converted1 == $purple && $berry_converted2 == $purple then $purple.combine_2_berries($berry_converted1, $berry_converted2, $black, 2, $indigo, 1)
+    when $berry_converted1 == $gold && $berry_converted2 == $gold then $gold.combine_3_berries($berry_converted1, $berry_converted2, $green, 1, $red, 1, $gray, 1)
 
       # Yellow Start Combinations
     when ($berry_converted1 == $yellow && $berry_converted2 == $white) || ($berry_converted1 == $white && $berry_converted2 == $yellow) then $yellow.combine_berries($berry_converted1, $berry_converted2, $green, 3)
