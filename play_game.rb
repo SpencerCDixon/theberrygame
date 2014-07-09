@@ -30,10 +30,10 @@ instructions = TextInstructions.new(name: "instructions")
 
 # Months
 startgame = Month.new(month_name: "start", rain_chance: 0, snow_chance: 0, drought_chance: 0) #Needed in order to set up months properly
-january = Month.new(month_name: "january", rain_chance: 25, snow_chance: 75, drought_chance: 0)
-february = Month.new(month_name: "february", rain_chance: 38, snow_chance: 50, drought_chance: 0)
-march = Month.new(month_name: "march", rain_chance: 50, snow_chance: 13, drought_chance: 0)
-april = Month.new(month_name: "april", rain_chance: 63, snow_chance: 0, drought_chance: 0)
+january = Month.new(month_name: "january", rain_chance: 20, snow_chance: 75, drought_chance: 0)
+february = Month.new(month_name: "february", rain_chance: 30, snow_chance: 50, drought_chance: 0)
+march = Month.new(month_name: "march", rain_chance: 50, snow_chance: 10, drought_chance: 0)
+april = Month.new(month_name: "april", rain_chance: 60, snow_chance: 0, drought_chance: 0)
 may = Month.new(month_name: "may", rain_chance: 75, snow_chance: 0, drought_chance: 13)
 june = Month.new(month_name: "june", rain_chance: 50, snow_chance: 25, drought_chance: 0)
 july = Month.new(month_name: "july", rain_chance: 25, snow_chance: 38, drought_chance: 0)
