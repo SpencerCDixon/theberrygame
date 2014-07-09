@@ -87,7 +87,7 @@ month_tracker = month_tracker.push(1)
   # Get the first berry input from the player.
 
   puts "Which two berries would you like to combine? "
-  puts "(type berry name in then press ENTER)"
+  puts "(type berry name in with no spaces then press ENTER)"
   puts " "
 
   loop do
