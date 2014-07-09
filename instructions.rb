@@ -9,37 +9,34 @@ class TextInstructions
 
   def welcome
     puts "-----------------------------------------------"
-    puts "Welcome to the berry game! You are a berry farmer"
-    sleep 2
-    puts "on a journey to become a Master Berry Farmer. In "
-    sleep 2
+    puts "Welcome to the berry game! You are a novice berry"
+    puts "farmer on a journey to become a Master. In "
     puts "order to become a Master Berry Farmer you must   "
-    sleep 2
-    puts "discover each species of berry. (Some are rarer  "
-    sleep 2
-    puts "than others)"
-    sleep 3
+    puts "discover each species of berry.  Some are rarer  "
+    puts "than others.  There are 16 berry species in total. "
+    puts " "
+    puts "To discover new berries you just combine two berries"
+    puts "together to get new berries. To start off you get "
+    puts "3 yellow, 3 white, and 3 black berries."
     puts " "
     puts "You are given 1 year to discover all the berries."
-    sleep 2
     puts "Each month you will have 5 rounds to make new    "
-    sleep 2
-    puts "berries. In order to win the game you must have AT"
-    sleep 2
+    puts "berries and then it will become the next month. "
+    puts "Make sure to use your time wisely!"
+    puts " "
+    puts "IMPORTANT: In order to win the game you must have AT"
     puts "LEAST 1 of each berry in your scoreboard. Just like"
-    sleep 2
-    puts "in real life the weather is constantly changing. The"
-    sleep 2
-    puts "weather will affect your berries so be careful."
-    sleep 3
+    puts "in real life, the weather is constantly changing. The"
+    puts "weather will affect your berries so be careful. As"
+    puts "the weather changes it might affect your snow and "
+    puts "water levels so keep an eye on those."
     puts " "
     puts "You may only combine berries that you already have."
-    sleep 2
     puts "So don't try and combine a berry if the scoreboard "
-    sleep 2
-    puts "says you have 0. To combine berries, just type their"
-    sleep 2
-    puts "name into the prompt when asked."
+    puts "says you have 0 of them."
+
+
+
   end
 
   def lose

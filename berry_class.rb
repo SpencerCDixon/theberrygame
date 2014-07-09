@@ -65,11 +65,10 @@ class Berry
 
   def berry_count_check(berry_input, berry_number)
     if @berry_count == 0
-      puts "Seems you don't have enough berries for that. Try one more time.".red
+      puts "Seems you don't have enough berries for that.".red
+      puts "Try a berry type that you have in stock.(See Scoreboard)".red
       print berry_number
       berry_input = gets.chomp.downcase
-    else
-      true
     end
   end
 
