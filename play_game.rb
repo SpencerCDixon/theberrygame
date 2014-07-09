@@ -61,10 +61,11 @@ end
 
 
 loop do
-
+  break if $months.current_month.month_name == "december" && $round.default_turn_count == 5
 # Cycles through the $months array after the appropriate number of turns.
 # Also checks weather when it becomes a new month every 5 turns
 month_tracker = month_tracker.push(1)
+
   if month_tracker == [1, 1, 1, 1, 1, 1]
      $months.next_month
      month_tracker = [1]
@@ -364,6 +365,8 @@ if $yellow.berry_count >= 1 && $green.berry_count >= 1 && $white.berry_count >= 
   puts instructions.win
 elsif $weather.rain >= 14 || $weather.rain == 0
   puts instructions.lose
+else
+  puts instructions.no_time
 end
 
 

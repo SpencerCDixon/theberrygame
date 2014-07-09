@@ -46,6 +46,11 @@ class TextInstructions
     puts "flooded. Better luck next time!"
   end
 
+  def no_time
+    puts "GAME OVER. You ran out of time. Better luck next time!"
+
+  end
+
 
   def win
     puts"-----------------------------------------------".light_blue
