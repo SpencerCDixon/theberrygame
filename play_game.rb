@@ -30,18 +30,18 @@ instructions = TextInstructions.new(name: "instructions")
 
 # Months
 startgame = Month.new(month_name: "start", rain_chance: 0, snow_chance: 0, drought_chance: 0) #Needed in order to set up months properly
-january = Month.new(month_name: "january", rain_chance: 20, snow_chance: 70, drought_chance: 0)
-february = Month.new(month_name: "february", rain_chance: 20, snow_chance: 40, drought_chance: 0)
-march = Month.new(month_name: "march", rain_chance: 50, snow_chance: 10, drought_chance: 0)
-april = Month.new(month_name: "april", rain_chance: 60, snow_chance: 0, drought_chance: 0)
-may = Month.new(month_name: "may", rain_chance: 75, snow_chance: 0, drought_chance: 13)
-june = Month.new(month_name: "june", rain_chance: 50, snow_chance: 25, drought_chance: 0)
-july = Month.new(month_name: "july", rain_chance: 25, snow_chance: 38, drought_chance: 0)
-august = Month.new(month_name: "august", rain_chance: 0, snow_chance: 0, drought_chance: 70)
-september = Month.new(month_name: "september", rain_chance: 13, snow_chance: 0, drought_chance: 25)
-october = Month.new(month_name: "october", rain_chance: 50, snow_chance: 25, drought_chance: 0)
-november = Month.new(month_name: "november", rain_chance: 25, snow_chance: 38, drought_chance: 0)
-december = Month.new(month_name: "december", rain_chance: 13, snow_chance: 63, drought_chance: 0)
+january = Month.new(month_name: "january", rain_chance: 20, snow_chance: 60, drought_chance: 0)
+february = Month.new(month_name: "february", rain_chance: 30, snow_chance: 40, drought_chance: 0)
+march = Month.new(month_name: "march", rain_chance: 40, snow_chance: 10, drought_chance: 0)
+april = Month.new(month_name: "april", rain_chance: 50, snow_chance: 0, drought_chance: 0)
+may = Month.new(month_name: "may", rain_chance: 60, snow_chance: 0, drought_chance: 10)
+june = Month.new(month_name: "june", rain_chance: 40, snow_chance: 0, drought_chance: 30)
+july = Month.new(month_name: "july", rain_chance: 20, snow_chance: 0, drought_chance: 40)
+august = Month.new(month_name: "august", rain_chance: 0, snow_chance: 0, drought_chance: 50)
+september = Month.new(month_name: "september", rain_chance: 10, snow_chance: 0, drought_chance: 20)
+october = Month.new(month_name: "october", rain_chance: 40, snow_chance: 20, drought_chance: 0)
+november = Month.new(month_name: "november", rain_chance: 20, snow_chance: 30, drought_chance: 0)
+december = Month.new(month_name: "december", rain_chance: 10, snow_chance: 50, drought_chance: 0)
 
 # Month Rotation
 $months = MonthCycle.new(month_count: [december,november,october,september,august,july,june,may,april,march,february,january,startgame])
@@ -256,7 +256,7 @@ month_tracker = month_tracker.push(1)
     when ($berry_converted1 == $green && $berry_converted2 == $gold) || ($berry_converted1 == $gold && $berry_converted2 == $green) then $green.combine_berries($berry_converted1, $berry_converted2, $teal, 3)
 
       # Red Start Combinations
-    when ($berry_converted1 == $red && $berry_converted2 == $gray) || ($berry_converted1 == $gray && $berry_converted2 == $red) then $red.combine_berries($berry_converted1, $berry_converted2, $purple, 3)
+    when ($berry_converted1 == $red && $berry_converted2 == $gray) || ($berry_converted1 == $gray && $berry_converted2 == $red) then $red.combine_berries($berry_converted1, $berry_converted2, $orange, 3)
     when ($berry_converted1 == $red && $berry_converted2 == $tan) || ($berry_converted1 == $tan && $berry_converted2 == $red) then $red.combine_berries($berry_converted1, $berry_converted2, $yellow, 3)
     when ($berry_converted1 == $red && $berry_converted2 == $pink) || ($berry_converted1 == $pink && $berry_converted2 == $red) then $red.combine_berries($berry_converted1, $berry_converted2, $red, 3)
     when ($berry_converted1 == $red && $berry_converted2 == $indigo) || ($berry_converted1 == $indigo && $berry_converted2 == $red) then $red.combine_berries($berry_converted1, $berry_converted2, $black, 3)
@@ -350,7 +350,7 @@ month_tracker = month_tracker.push(1)
 
 
   ## Break the loop in order to win or lose.
-  break if $weather.rain >= 14 || $weather.rain == 0
+  break if $weather.rain >= 13 || $weather.rain == 0
   break if $yellow.berry_count >= 1 && $green.berry_count >= 1 && $white.berry_count >= 1 && $black.berry_count >= 1 && $red.berry_count >= 1 && $gray.berry_count >= 1 && $tan.berry_count >= 1 && $pink.berry_count >= 1 && $indigo.berry_count >= 1 && $brown.berry_count >= 1 && $blue.berry_count >= 1 && $orange.berry_count >= 1 && $maroon.berry_count >= 1 && $teal.berry_count >= 1 && $purple.berry_count >= 1 && $gold.berry_count >= 1
 
   puts " "
@@ -370,7 +370,7 @@ puts " "
 
 if $yellow.berry_count >= 1 && $green.berry_count >= 1 && $white.berry_count >= 1 && $black.berry_count >= 1 && $red.berry_count >= 1 && $gray.berry_count >= 1 && $tan.berry_count >= 1 && $pink.berry_count >= 1 && $indigo.berry_count >= 1 && $brown.berry_count >= 1 && $blue.berry_count >= 1 && $orange.berry_count >= 1 && $maroon.berry_count >= 1 && $teal.berry_count >= 1 && $purple.berry_count >= 1 && $gold.berry_count >= 1
   puts instructions.win
-elsif $weather.rain >= 14 || $weather.rain == 0
+elsif $weather.rain >= 13 || $weather.rain == 0
   puts instructions.lose
 else
   puts instructions.no_time

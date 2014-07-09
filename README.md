@@ -6,7 +6,7 @@ a black background.  Some parts of the game won't show up if you have a white ba
 ### To Play Game
 In order to play the game just enter the following into your terminal.
 
-<code> git clone git@github.com:SpencerCDixon/theberrygame.git berry_game </code> <br />
+<code> git clone https://github.com/SpencerCDixon/theberrygame.git berry_game </code> <br />
 <code> cd berry_game </code><br />
 <code> bundle install </code><br />
 <code> ruby play_game.rb</code><br />
